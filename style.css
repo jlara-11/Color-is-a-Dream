@@ -1,0 +1,228 @@
+/*Header*/ /*CHECK*/
+header {
+position: relative;
+width: 100%;
+height: auto;
+background-color: #6A7E9F;
+}
+
+/*Edit logo positioning*/ /*CHECK*/
+.logo {
+display: block;
+position: relative;
+text-align: right;
+z-index: 10;
+}
+
+.white_background {
+background-color: white;
+position: relative;
+margin-left: 200px;
+margin-right: 200px;
+z-index: 1;
+}
+
+
+
+/* Hide the images by default */ /*COME HERE TO EDIT THE PICTURE*/ /*CHECK*/
+header .slide_show {
+display: 
+}
+
+/*THIS SCALES TO FIT THE IMAGES, CROP WITHOUT STRETCH PLACES ALL ON TOP OF EACH OTHER*/ /*CHECK*/
+header .slide_show {
+height: 380px;
+overflow: hidden;
+position: absolute;
+}
+
+/*This will fill the width and height of its box and often cropping the image in the process*/ /*CHECK*/
+header #slideshow_container img{
+object-fit: cover;
+}
+
+/*This will edit each individual picture to scale them where i want to*/ /*EDITS IN PROGRESS*/
+div .slide_show img {
+object-position: 0px -270px;
+}
+
+
+
+
+.Title {
+text-align: left;
+font-family: sweethart;
+font-size: 55px;
+word-spacing: 3px;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+.video {
+position: relative;
+text-align: center;
+}
+
+
+
+
+/*How to create a horizontal line*/
+.border_1 {
+border: 1px solid grey;
+}
+
+/*How to center the horizontal line and make it longer*/
+.border_1 {
+width: 1000px;
+position: relative; 
+}
+
+.border_11 {
+border: 1px solid grey;
+text-align: center;
+}
+
+/*How to create a horizontal line*/
+.border_2 {
+border: 1px solid grey;
+width: 470px;
+}
+
+.border_3 {
+border: 1px solid grey;
+width: 555px;
+}
+
+p.link {
+font-size: 18px;
+}
+
+/* Font size in beauty services on links */
+.links_here {
+font-size: 18px;
+}
+
+/* Book your appointment today text align center */
+.book_app {
+text-align: center;
+}
+
+/*Body text for introduction Color is a Dream*/
+.body_text {
+font-family: Opificio Neue;
+}
+
+/*For color is a dream because word spacing*/
+h2 {
+font-family: sweethart;
+font-size: 65px;
+word-spacing: 3px;
+margin-top: 0px;
+margin-bottom: 0px;
+text-align: center;
+}
+
+/*About letter-spacing because font displays it too close together*/
+h2.about {
+font-size: 25px;
+letter-spacing: 2px;
+float: left;
+}
+
+/* For text in about */
+div.float_right {
+font-family: Opificio Neue;
+}
+
+.text_to_the_left {
+text-align: left;
+}
+
+.image_1_home {
+float: right;
+}
+
+/*About text for introduction meet Amanda*/
+h4 {
+font-family: Opificio Neue;
+top: 50%;
+}
+
+.body_text {
+position: relative;
+right: 0;
+top: 50%;
+width: 100%;
+text-align: top;
+z-index: 10;
+}
+
+div .beauty_services_caption {
+font-family: sweethart;
+}
+
+
+
+
+/*Footer*/
+.footer {
+background-color: #6A7E9F;
+text-align: center;
+}
+
+/*How to create a horizontal line*/
+.footer_border_3 {
+border: 1px solid white;
+}
+
+/*How to center the horizontal line and make it longer*/
+.footer_border_3 {
+width: 100%;
+position: relative;
+}
+
+footer h4 {
+font-family: Opificio Neue;
+color: white;
+}
+
+/* This aligns the logo and text in a row and places them in the center! */
+div .social_logo {
+position: relative;
+display: flex;
+justify-content: center;
+}
+
+/* This removes line under hyperlink of footer links to social media */
+h4 a {
+color: white;
+text-decoration: none;
+}
+
+
+
+/* Back to top button */
+.topbtn {
+font-size: 15px;
+float: right;
+position: relative;
+border-radius: 10px;  /* Makes rounded corners */
+padding: 5px;
+cursor: pointer; /* Adds a mouse pointer on hover */
+border: none;    /* Removes borders */
+outline: none;   /* Removes outline */
+
+}
+
+/* Adds a darker color on hover */
+.topbtn:hover {
+background-color: #555; /* Add a dark-grey background on hover */
+color: white;
+outline: none;
+}
+
+
+
+
+
+

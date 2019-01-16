@@ -1,0 +1,130 @@
+/* Navigation CSS only */
+
+/* Sticky Navigation bar will keep element on screen even after you scroll the page */ /*CHECK*/
+nav {
+position: sticky;
+top: 0;
+border: 2px solid grey;
+width: 100%;
+z-index: 100;
+background-color: #6A7E9F;
+}
+
+/* Removes bullets, margins and padding from the list */ /*CHECK*/
+ul {
+list-style-type: none;
+margin: 0;
+font-family: Opificio Neue;
+font-size: 20px;
+}
+
+/* Positions the text for the navigation bar height */ /*CHECK*/
+ ul li{
+display: inline-block;
+position: relative;
+line-height: 30px;
+text-align: left;
+}
+    
+/* How far apart the navigation text will be from each other */ /*CHECK*/
+ul li a{
+display: block;
+padding: 14px 35px;
+text-decoration: none;
+text-align: center;
+}
+
+/* The color of the navigation text */ /*CHECK*/
+ul li a{
+color: white;
+}
+    
+/* Change the link color on hover */ /*CHECK*/
+ul li a:hover{
+color: #fbad17;
+}
+   
+   
+   
+   
+/* Dropdown Content (Hidden by Default) This is beauty and styling services*/ /*CHECK*/
+ul li ul.dropdown{
+display: none;
+position: absolute;
+padding-left: 0px;
+}
+ 
+/* This is the drop down content */ /*IMPORTANT CHANGE*/
+ul li ul.dropdown{
+min-width: 100%; /* Set width of the dropdown */
+background: #6A7E9F;
+z-index: 999;
+left: 0;
+}
+
+    
+/* Dropdown Content*/ /*IMPORTANT*/ /*THIS SHOULD POSITION THE DROP DOWN CONTENT*/
+ul li ul {
+/* Align it to the button */
+margin-left: 0px;
+min-width: 160px;
+z-index: 1;
+}
+
+/* This is what displays the drop down content. Hover effect */
+ul li:hover ul.dropdown{
+display: block;    
+}
+/* How the content will be displayed */
+ul li ul.dropdown li{
+display: block;
+}
+    
+/* An "active" class to the current link to let the user know which page he/she is on */ /*CHECK*/
+.active {
+color: #fbad17;
+}
+
+/* This is what center my navigation bar */ /*CHECK*/
+nav ul {
+list-style: none;
+margin: 0 auto;
+width: 65%;
+}
+
+
+/* Dropdown Content (Hidden by Default) This is beauty and styling services*/ /*CHECK*/
+.dropdown_content {
+display: none;
+position: relative;
+}
+
+
+
+/*Show the dropdown menu on hover for services*/
+.dropbtn:hover .dropdown_content{
+display: block;
+}
+
+
+/*Drop down menu for contact*/
+.dropdown_content_book {
+display: none;
+position: absolute;
+}
+
+
+
+
+
+/*Flexbox Model*/
+.flex_container {
+display: flex;
+margin: 0px;
+flex-flow: column;
+align-items: center;
+align-content: space-around;
+}
+
+
+
