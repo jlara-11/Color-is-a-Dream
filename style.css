@@ -22,15 +22,21 @@ margin-right: 200px;
 z-index: 1;
 }
 
+/* This resizes proportionally the first image in the home page without stretching! */
+div .slide_show2 img {
+object-fit: cover;
+display: inline-block;
+float: right;
+}
 
-
-/* Hide the images by default */ /*COME HERE TO EDIT THE PICTURE*/ /*CHECK*/
-header .slide_show {
-display: 
+/*This will edit each individual picture to scale them where i want to*/ /*EDITS IN PROGRESS*/
+div .slide_show img {
+object-position: 0px 0px;
 }
 
 /*THIS SCALES TO FIT THE IMAGES, CROP WITHOUT STRETCH PLACES ALL ON TOP OF EACH OTHER*/ /*CHECK*/
-header .slide_show {
+div .header_img img {
+object-position: 0px -270px;
 height: 380px;
 overflow: hidden;
 position: absolute;
@@ -40,13 +46,6 @@ position: absolute;
 header #slideshow_container img{
 object-fit: cover;
 }
-
-/*This will edit each individual picture to scale them where i want to*/ /*EDITS IN PROGRESS*/
-div .slide_show img {
-object-position: 0px -270px;
-}
-
-
 
 
 .Title {
@@ -62,8 +61,6 @@ margin-bottom: 0px;
 position: relative;
 text-align: center;
 }
-
-
 
 
 /*How to create a horizontal line*/
@@ -122,7 +119,12 @@ margin-bottom: 0px;
 text-align: center;
 }
 
+
 /*About letter-spacing because font displays it too close together*/
+.quote_about {
+text-align: center;
+}
+
 h2.about {
 font-size: 25px;
 letter-spacing: 2px;
@@ -162,13 +164,26 @@ font-family: sweethart;
 }
 
 
-
-
 /*Footer*/
 .footer {
 background-color: #6A7E9F;
 text-align: center;
 }
+
+/* This is the copyright content */
+.footer_bottom {
+text-align: center;
+background-color: #1B1B1B;
+padding: 5px 0;
+font-size: 12px;
+line-height: 1;
+}
+
+/* Color of the footer_bottom */
+footer .footer_bottom {
+background-color: #5b6c87;
+color: white;
+} 
 
 /*How to create a horizontal line*/
 .footer_border_3 {
@@ -191,6 +206,7 @@ div .social_logo {
 position: relative;
 display: flex;
 justify-content: center;
+padding: 10px;
 }
 
 /* This removes line under hyperlink of footer links to social media */
@@ -199,6 +215,41 @@ color: white;
 text-decoration: none;
 }
 
+/* This is the link to her shop on shop page */
+.link {
+  background-color: #6A7E9F;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the link button, add a darker blue color */
+.link:hover {
+color: white;
+background-color: #5b6c87;
+}
+
+/* Customizes all links */
+a {
+color: white;
+text-decoration: none;
+}
+
+.links_here {
+  background-color: #6A7E9F;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.links_here:hover {
+color: white;
+background-color: #5b6c87;
+}
 
 
 /* Back to top button */
@@ -211,7 +262,6 @@ padding: 5px;
 cursor: pointer; /* Adds a mouse pointer on hover */
 border: none;    /* Removes borders */
 outline: none;   /* Removes outline */
-
 }
 
 /* Adds a darker color on hover */
@@ -223,6 +273,47 @@ outline: none;
 
 
 
+/* CONTACT FORM */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 50%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
 
+/* Style the SUBMIT BUTTON with a specific background color etc */
+input[type=submit] {
+  background-color: #6A7E9F;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker blue color */
+input[type=submit]:hover {
+  background-color: #5b6c87;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* This makes the first and last name 25% */
+input[type=text] {
+width: 25%;
+}
+
+#email {
+width: 50%;
+}
 
 

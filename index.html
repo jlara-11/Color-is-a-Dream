@@ -10,13 +10,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Responsive Meta Tag (For phone view instead of web view)-->
      <link href="https://fonts.googleapis.com/css? family="sweethart" type="text/css" rel="stylesheet"> <!--Code for font usage (sweethart typeface)-->
      <link href="https://fonts.googleapis.com/css? family="Opificio Neue" type="text/css" rel="stylesheet"> <!--Code for font usage (opificio neue)-->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!--Link to Bootstrap-->
     <link href="style.css" type="text/css" rel="stylesheet"> <!--Link to css-->
     <link href="navigation.css" type="text/css" rel="stylesheet"> <!--Link to navigation css-->
     <script src="myscripts.js"></script> <!--Link to js-->
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Chris java code-->
     <!--This is to add a background image to the site--> <!--Then to make the background fixed--> <!--DO NOT USE CURRENT IMAGE, IT IS SOMEONE ELSES IMAGE, THIS IS JUST A TEST-->
-    <script scr="js/bootstrap.js"></script> <!--This will import all my bootstrap code to the site(Link to Bootstrap)-->
+    <link rel=”stylesheet” href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!--This will import all my bootstrap code to the site(Link to Bootstrap)-->
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script> <!--This will import all my javascript code to the site(Link to JavaScript)-->
     <style> 
       body {
       background-color: #acb8cc;
@@ -25,32 +25,32 @@
       background-attachment: fixed;
       }
     </style>
-    <meta name="author" content="Jesus A. Lara & Christopher Sanchez" />
+    <meta name="author" content="Jesus A. Lara"/>
   </head>
 
 
 <body>
 
-  <header style="height: 380px">
+  <header style="height: 900px" class=”container”> <!-- The class of this header is for bootstrap -->
  <!-- Full-width images with number and caption text -->
     <div id="slideshow_container"> 
         
-      <div class="slide_show" >
-          <img src="IMG_3270 (1).jpg" width="100%" height="100%" alt="Slide show image 3">
-      </div>  
-    
-      <div class="logo">
-        <img src="ColorDream_Logos_Final-01.png" width="15%" height="15%" style="margin-top: 135px;" alt="Slide show">
-      </div> 
+<!--Introductory Video-->
+<div class="video">
+  <video width="100%" height="55%" alt="Full Video" controls="controls" preload="metadata">
+    <source src="Full Version.mp4#t=0.4" type="video/mp4">
+  </video>
+</div> 
+
     <br>
   </header>
 
 
   <!--Navigation & drop down menu. Home, About, etc.-->
-<nav style="height: 60px"> 
+<nav style="height: 60px width=""> 
     <ul>
         <li><a class="active" href="index.html">HOME</a></li>
-        <li><a href="about.html#About">ABOUT</a></li>
+        <li><a href="about.html">ABOUT</a></li>
         
         <li><a href="services.html">SERVICES</a>
             <ul class="dropdown">
@@ -59,39 +59,22 @@
             </ul>
         </li>
         
-        <li><a href="events.html">EVENTS</a></li>
-        <li><a href="blog.html">BLOG</a></li>
         <li><a href="shop.html">SHOP</a></li>
         
         <li><a href="contact.html">CONTACT</a>
-            <ul class="dropdown">
-                <li><a href="book.html">BOOK</a></li>
-            </ul>
+
         </li>
     </ul>
 </nav>
 
 <div class="white_background"> 
 
-<br><br><br><br>
-
-
 
 
 
 <div class="flex_container">
-<!--Introductory Video-->
-<div class="video">
-  <video width="55%" height="55%" alt="Full Video" controls>
-    <source src="Full Version.mp4" type="video/mp4">
-  </video>
-</div>
 
 <br><br>
-
-<div class="border_1"></div>
-
-<div class="text_to_the_left">
 
 <div class="body_text" style="width: 985px;">
 <!--Body introductory text-->
@@ -105,62 +88,29 @@
 
 <br><br>
 
-<!--First home pic-->
-<div class="right_image">
-  <img src="IMG_3260.jpg" width="100%" height="100%" alt="Picture 1 in about section" style="float: right; height:100%; width: 500px;">
-</div>
-
-
-  <h3 class="Title">About</h3>
-
-<div class="float_right">
-
-
-    <p><h4>Meet Amanda</h4>
-
-    As a native of chicago, I have always loved fine arts. 
-    <br>I grew up loving to draw and create fashionable items 
-    <br>that were a little before its time. While attending 
-    <br>cosmetology school I realized that I had an undiscovered  
-    <br>passion for nails and nail art. After awhile of perfecting 
-    <br>my craft I began to incorporate fashion trends into  
-    <br>my nail art. This led me to further pursue my first love  
-    <br>which is fashion. I believe art is how you visually express 
-    <br>yourself. It show how one feels and what you want  
-    <br>people to perceive you. Fashion, is an extension of how  
-    <br>you greet others. Embracing your style can boost your 
-    <br>confidence, and when you feel better you become
-    <br>more productive.</p>  
-
-<br>
-
-<div>
-  <img src="IMG_2885.jpg" width="100%" height="100%" alt="Picture 2 in about section" style="float: right; height:100%; width: 500px">
-</div>
-
-  <h4>It’s said that we dream in black & white. 
-  <br>Well I choose to dream in color.</h4>
-  
-      <div class="border_2"></div>
-      
-    <p>The first time I ever styled someone from head to toe my  
-    <br>client was going through alot. I offered and said “let's do  
-    <br>a makeover”. She saw her face beat, new hair cut & color,  
-    <br> outfit , and just cried. At that moment I knew this was how   
-    <br>I can heal people. I knew it was morethen just playing 
-    <br>dress up. It was like we changed how she dreamed…
-    <br>No more black and white. We only dream in color. 
-    <br><br>“It’s said that we dream in black and white.
-    <br><br>Well I choose to dream in color.”-Amanda Pye</p>
-    
-
-</div>
-</div>
-
-</div>
-
-
+<!--Header image-->
+      <div class="slide_show2">
+          <img src="define-courage.jpg" width="100%" height="100%" alt="Slide show image 3" style="height:800px; width: 50%;">
+          <img src="You-are-Courageous.jpg" width="100%" height="100%" alt="Slide show image 3" style="height:800px; width: 50%;">
+          
+      </div>  
 <br><br>
+  <div class="slide_show2" >
+          <img src="IMG_3121.jpg" width="100%" height="100%" alt="Slide show image 3" style="height:800px; width: 50%;">
+          <img src="IMG_2927.jpg" width="100%" height="100%" alt="Slide show image 3" style="height:800px; width: 50%;">
+          
+      </div>  
+<br><br>
+  <div class="slide_show2" >
+          <img src="IMG_2408.jpg" width="100%" height="100%" alt="Slide show image 3" style="height:800px; width: 50%;">
+          <img src="IMG_2117.jpg" width="100%" height="100%" alt="Slide show image 3" style="height:800px; width: 50%;">
+          
+      </div> 
+
+</div>
+
+</div>
+
 
 </div>
 
@@ -168,17 +118,11 @@
   <div class="footer"><br>
   
  <div class="social_logo">
-  <a href="https://www.facebook.com/ColorisaDream/?ref=bookmarks" target="_blank"><img src="FB_Logo.png" width="35px" height="35px" style="margin-top: 10px;margin-right: 10px" alt="Instagram Logo"></a>
+ <a href="https://www.instagram.com/colorisadream/" target="_blank"><img src="Insta_Logo_White.png" width="40px" height="40px" style="padding-right:30px" alt="Instagram Logo"></a>
  
-      <h4><a href="https://www.facebook.com/ColorisaDream/?ref=bookmarks" target="_blank">FACEBOOK</a></h4>
-  
-  <a href="https://www.instagram.com/colorisadream/" target="_blank"><img src="Insta_logo.png" width="35px" height="35px" style="margin-top: 12px; margin-left: 20px; margin-right: 10px" alt="Instagram Logo"></a>
-   
-      <h4><a href="https://www.instagram.com/colorisadream/" target="_blank">INSTAGRAM</a></h4>
+  <a href="https://www.facebook.com/ColorisaDream/?ref=bookmarks" target="_blank"><img src="FB_Logo_White.png" width="40px" height="40px" alt="FaceBook Logo"></a>
       
-  <a href="https://www.youtube.com/channel/UCfu7z059p6I0Ev830gkemhg?view_as=subscriber" target="_blank"><img src="YouTube_Logo.png" width="45px" height="35px" style="margin-top: 13px; margin-left: 20px; margin-right: 10px" alt="Instagram Logo"></a>
-  
-      <h4><a href="https://www.youtube.com/channel/UCfu7z059p6I0Ev830gkemhg?view_as=subscriber" target="_blank">YOUTUBE</a></h4> 
+  <a href="https://www.youtube.com/channel/UCfu7z059p6I0Ev830gkemhg?view_as=subscriber" target="_blank"><img src="YouTube_Logo_White.png" width="40px" height="40px" style="padding-left:30px" alt="YouTube Logo"></a>
   </div>
       
       <h4><button onclick="topFunction()" class="topbtn" title="Go to top">BACK TO TOP ^</button></h4>
@@ -187,22 +131,25 @@
       
       <br>
       
-    <ul>
+    <ul class="bottom_nav">
       <li><a href="index.html">HOME</a></li>
       <li><a href="about.html">ABOUT</a></li>
         
       <li><a href="services.html">SERVICES</a></li>
+
+      <li><a href="shop.html">SHOP</a></li>
         
-      <li><a href="#">EVENTS</a></li>
-      <li><a href="#">BLOG</a></li>
-      <li><a href="#">SHOP</a></li>
-        
-      <li><a href="#">CONTACT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
     </ul>
     
     <br>
     
   </div>
+  
+  <div class="footer_bottom">
+  <p>Copyright © 2019. All Rights Reserved Color Is a Dream. I do not own any images or content provided. This Is Only For Personal Project Purposes.</p>
+  </div>
+  
 </footer>
 
   </body>
